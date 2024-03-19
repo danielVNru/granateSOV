@@ -10,3 +10,20 @@ html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul {
 html{
     font-size: 10px;
 }
+
+.wrapper {
+    background-color: #202020;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+[class*="__conteiner"] {
+    max-width: 1080px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}

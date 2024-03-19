@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход ученик</title>
+    <link rel="stylesheet" href="./css/reg.students.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__conteiner">
+                <div class="header__text">
+                    <h2 class="header__title">Язык обучения:</h2>
+                    <h3 class="header__subtitle">Язык в любой момент можно <br>будет изменить в настройках</h3>
+                </div>
+
+                <div class="header__langs">
+                    <div class="header__lang --ru --now">Русский</div>
+                    <div class="header__lang --tj">Таджикский</div>
+                    <div class="header__lang --uz">Узбекский</div>
+                </div>
+            </div>
+        </header>
+        <section class="progress">
+            <div class="progress__conteiner">
+                <h1 class="page-title progress__title">Регистрация на курс</h1>
+                <div class="progress__bar">
+                    <div class="progress__stage stage s1 --now">
+                        <div class="stage__num">1<div class="ndec-1"></div>
+                        </div>
+                        <div class="stage__title">Ученик</div>
+                    </div>
+                    <div class="progress__stage s2 stage">
+                        <div class="stage__num">2</div>
+                        <div class="stage__title">Обучение</div>
+                    </div>
+                    <div class="progress__stage s3 stage">
+                        <div class="stage__num">3<div class="ndec-3"></div>
+                        </div>
+                        <div class="stage__title">Подтверждение</div>
+                    </div>
+
+                    <div class="progress__decor">
+                        <div class="decol-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__conteiner">
+                <div class="content__screen screen1">
+                    <div class="content__row">
+                        <div class="content__column cc1">
+                            <div class="form__input">
+                                <input type="text" id="log" class="form__inp" placeholder="Имя">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" id="log" class="form__inp" placeholder="Фамилия">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" id="log" class="form__inp" placeholder="Отчество">
+                            </div>
+                            <div class="form__input --d-input">
+                                <input type="text" id="log" class="form__inp" placeholder="Дата рождения">
+                                <input type="date" class="dinp" name="data" id="#date-inp">
+                                <label for="#date-inp" class="date-ico"></label>
+                            </div>
+                        </div>
+                        <div class="content__column cc2">
+                            <div class="form__input">
+                                <input type="tel" id="log" class="form__inp" placeholder="Номер телефона">
+                            </div>
+                            <div class="form__input">
+                                <input type="password" id="pass" class="form__inp" placeholder="Пароль">
+                                <div class="pass-ico"></div>
+                            </div>
+                            <div class="form__input">
+                                <input type="password" id="pass" class="form__inp" placeholder="Подтверждение пароля">
+                                <div class="pass-ico"></div>
+                            </div>
+                            <div class="form__input">
+                                <button class="next btn">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-footer">
+                        <span>У вас уже есть аккаунт? <a href="/" class="content__link">Войти</a></span>
+                    </div>
+                </div>
+                <div class="content__screen screen2 --none">
+                    <div class="content__row">
+                        <div class="content__column cc1">
+                            <div class="form__input">
+                                <div class="select-ico"></div>
+                                <select name="" id="" class="form__inp">
+                                    <option value="0" selected disabled>Преподаватель</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content__column cc2">
+                            <div class="form__input">
+                                
+                                <div class="select-ico"></div>
+                                <select name="" id="" class="form__inp">
+                                    <option value="0" selected disabled>Номер группы</option>
+                                </select>
+                            </div>
+    
+                                <button class="next btn">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__screen screen3 --none">
+                        <div class="content__row">
+                            <div class="content__column cc1">
+                                <h3 class="code-title">Какой код <br>подтверждения <br>назвал педагог?</h3>
+                            </div>
+                            <div class="content__column cc2">
+                                <div class="form__input">
+                                    <div class="form__input">
+                                        <input type="tel" id="log" class="form__inp" placeholder="Код">
+                                    </div>
+                                </div>
+        
+                                    <button class="next btn">Далее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/lang-reg.js"></script>
+    <script src="./js/reg-form-controller.js"></script>
+</body>
+
+</html>
